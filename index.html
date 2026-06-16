@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connected — Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Connected for iOS</p>
+    <h1>Support</h1>
+    <p class="lede">Chat with language models you run yourself — on your local network, over Tailscale, or with Apple Intelligence on supported devices.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contact</h2>
+      <p>Questions, bug reports, or account issues:</p>
+      <p><a href="mailto:elia.moharer@gmail.com">elia.moharer@gmail.com</a></p>
+      <p class="muted">We typically respond within a few business days.</p>
+    </section>
+
+    <section>
+      <h2>Quick start</h2>
+      <ol>
+        <li>Start an OpenAI-compatible server on your computer (Ollama, LM Studio, oMLX, etc.).</li>
+        <li>Bind the server to <code>0.0.0.0</code> so your phone can reach it on your Wi‑Fi network.</li>
+        <li>In Connected, tap the brain icon → <strong>Find Endpoints</strong> and select your server.</li>
+        <li>Pick a model and start chatting.</li>
+      </ol>
+      <p>On devices with Apple Intelligence, you can chat without a server when no model is selected.</p>
+    </section>
+
+    <section>
+      <h2>Common issues</h2>
+      <details>
+        <summary>My endpoint isn’t showing up</summary>
+        <ul>
+          <li>Make sure your server is running and has at least one model downloaded.</li>
+          <li>Supported ports: 7590, 11434, 1234, 8000, 8080, 5000.</li>
+          <li>Bind the host to <code>0.0.0.0</code> (e.g. <code>OLLAMA_HOST=0.0.0.0 ollama serve</code>).</li>
+          <li>If your server requires an auth key, set it in the app before scanning.</li>
+          <li>Try scanning again once or twice.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>The model isn’t responding</summary>
+        <ul>
+          <li>Confirm the model fits your hardware and is loaded.</li>
+          <li>First responses can take up to a minute while the model loads.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>It can’t see my pictures</summary>
+        <p>Some models do not support vision. Check that your model accepts image input before attaching photos.</p>
+      </details>
+      <details>
+        <summary>Restore my Tailscale purchase</summary>
+        <p>Open the Tailscale purchase sheet in the app and tap <strong>Restore Purchases</strong>, or go to Help → Restore Purchases.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Legal</h2>
+      <ul class="links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Elia Moharer · Connected</p>
+  </footer>
+</body>
+</html>
